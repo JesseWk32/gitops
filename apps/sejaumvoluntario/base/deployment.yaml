@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sejaumvoluntario
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sejaumvoluntario
+  template:
+    metadata:
+      labels:
+        app: sejaumvoluntario
+    spec:
+      containers:
+      - name: app
+        image: nginx:latest
+        ports:
+        - containerPort: 80
