@@ -13,7 +13,8 @@ spec:
         app: sejaumvoluntario
     spec:
       containers:
-      - name: app
-        image: nginx:latest
-        ports:
-        - containerPort: 80
+        - name: nginx
+          image: harbor.local/apps/nginx:1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
