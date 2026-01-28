@@ -1,0 +1,5 @@
+namespace: sejaumvoluntario-dev
+
+resources:
+- ../../base
+- namespace.yaml
